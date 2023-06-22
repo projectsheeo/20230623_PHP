@@ -38,6 +38,10 @@ $status = $stmt->execute();
             $view .= '<a href="modify.php?id='.$result["id"].'">';
             $view .= $result["dateOfPost"].":  ".$result["id"].":  ".$result["nameOfSake"].":  ".$result["nameOfBrewery"].":  ".$result["typeOfSake"].":  ".$result["rating"].":  ".$result["review"].":  ".'$'.$result["price"].":  ".$result["sweetness"].":  ".$result["boldness"].":  ".$result["smoothness"];
             $view .= '</a>';
+            $view .= "  ";
+            $view .= '<a href="delete.php?id='.$result["id"].'">';
+            $view .= '[削除]';
+            $view .= '</a>';
             $view .= "</p>";
         }
     }

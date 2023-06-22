@@ -152,17 +152,7 @@ if ($status == false) {
 
         </form>
     </div>
-
-
-
-
-
-
-
-
-
-
-
+    
 </body>
 
 </html>
