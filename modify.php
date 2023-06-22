@@ -53,7 +53,7 @@ if ($status == false) {
     </div>
 
     <div class="form">
-        <form action="" method="">
+        <form action="update.php" method="post">
 
             <!-- 基本質問項目 -->
             <div class="form-group">
@@ -144,8 +144,11 @@ if ($status == false) {
                 <button type="submit">Done</button>
             </div>
 
-            <!-- Doneボタンが押されたら、ボタンが押された時間を取得してwrite.phpに送る -->
+            <!-- Doneボタンが押されたら、ボタンが押された時間を取得して送る -->
             <input type="hidden" name="dateOfPost" value="<?php echo date('Y-m-d H:i:s'); ?>">
+
+            <!-- ユーザーには表示されない形でidも送る -->
+            <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
 
         </form>
     </div>
